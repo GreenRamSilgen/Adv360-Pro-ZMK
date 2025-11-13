@@ -17,7 +17,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-key-positions = <22 23 24 25 26 40 41 42 43 44 54 55 57 56 58 8 9 10 11 12 13 27 45 59 74 73 71 72 75 21 7 39 53 37 38 69 68 70>;
@@ -59,6 +59,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(K) &kp A &kp F &kp U &kp U &kp LS(K) &kp A &kp F &kp U &kp U &kp N2 &kp N0 &kp N1 &kp N5 &kp EXCL>;
             label = "EXTRONPASS";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
 
         extAltPass: extAltPass {
@@ -66,6 +68,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(K) &kp A &kp F &kp U &kp U &kp U &kp N1 &kp N9 &kp N9 &kp N8 &kp EXCL>;
             label = "EXTALTPASS";
+            wait-ms = <35>;
+            tap-ms = <35>;
         };
     };
 
@@ -119,11 +123,11 @@
         extra1 {
             display-name = "Red";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &extronEmail  &extronPass  &extAltPass  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans        &trans       &trans       &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans        &trans       &trans       &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans        &trans       &trans       &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans       &trans       &trans   &trans
+&kp F1  &kp F2    &kp F3    &kp F4    &kp F5     &kp F6   &tog 1                                      &mo 3   &kp F7  &extronEmail  &extronPass  &extAltPass  &kp F11  &kp F12
+&trans  &kp HOME  &trans    &kp UP    &trans     &kp END  &none                                       &none   &trans  &trans        &trans       &trans       &trans   &trans
+&trans  &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &none   &trans  &trans      &trans  &trans  &none   &trans  &trans        &trans       &trans       &trans   &trans
+&trans  &trans    &trans    &trans    &trans     &trans                   &trans      &trans                  &trans  &trans        &trans       &trans       &trans   &trans
+&trans  &trans    &trans    &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans       &trans       &trans   &trans
             >;
         };
 
