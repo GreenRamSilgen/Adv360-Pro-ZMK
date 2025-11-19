@@ -57,7 +57,23 @@
         extronPass: extronPass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(K) &kp A &kp F &kp U &kp U &kp LS(K) &kp A &kp F &kp U &kp U &kp N2 &kp N0 &kp N1 &kp N5 &kp EXCL>;
+            bindings =
+                <&kt LSHIFT>,
+                <&macro_wait_time 100>,
+                <&kp K>,
+                <&macro_wait_time 100>,
+                <&kt LSHIFT>,
+                <&macro_wait_time 100>,
+                <&kp A &kp F &kp U &kp U>,
+                <&macro_wait_time 100>,
+                <&kt LSHIFT>,
+                <&macro_wait_time 100>,
+                <&kp K>,
+                <&macro_wait_time 100>,
+                <&kt LSHIFT>,
+                <&macro_wait_time 100>,
+                <&kp A &kp F &kp U &kp U &kp N2 &kp N0 &kp N1 &kp N5 &kp EXCL>;
+
             label = "EXTRONPASS";
             wait-ms = <35>;
             tap-ms = <35>;
