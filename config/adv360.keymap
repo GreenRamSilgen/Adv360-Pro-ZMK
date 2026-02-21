@@ -115,11 +115,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                 &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                  &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
-&kp ESC    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &none     &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &tog 5     &none      &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                      &kp LGUI              &kp RGUI                                 &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC  &kp DEL  &kp LEFT_ALT          &kp RIGHT_ALT      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
+&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
+&kp ESC    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &kp ESCAPE  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &tog 6     &none      &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                        &kp LGUI              &kp RGUI                                 &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp DEL  &kp LEFT_ALT          &kp RIGHT_ALT      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 5
             >;
         };
 
@@ -156,10 +156,10 @@
             >;
         };
 
-        extra1 {
+        ArrowMacros {
             display-name = "Red";
             bindings = <
-&kp F1  &kp F2    &kp F3      &kp F4             &kp F5           &kp F6   &tog 1                                      &mo 3   &kp F7  &extronEmail          &extronPass            &extAltPass  &kp F11  &kp F12
+&trans  &kp F1    &kp F2      &kp F3             &kp F4           &kp F5   &tog 1                                      &mo 3   &kp F7  &extronEmail          &extronPass            &extAltPass  &kp F11  &kp F12
 &trans  &kp HOME  &trans      &kp UP             &trans           &kp END  &none                                       &none   &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS    &trans   &trans
 &trans  &trans    &kp LEFT    &kp DOWN           &kp RIGHT        &trans   &none   &trans  &trans      &trans  &trans  &none   &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &trans   &trans
 &trans  &trans    &trans      &trans             &trans           &trans                   &trans      &trans                  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans   &trans
@@ -167,14 +167,25 @@
             >;
         };
 
-        extra2 {
+        WASD {
             display-name = "Purple";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &tog 1                                      &mo 3   &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &kp T   &kp Q   &kp W   &kp E   &kp R   &none                                       &none   &trans  &extronEmail  &trans  &trans  &trans  &trans
-&trans  &kp G   &kp A   &kp S   &kp D   &kp F   &none   &trans  &trans      &trans  &trans  &none   &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &kp B   &kp Z   &kp X   &kp C   &kp V                   &trans      &trans                  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &tog 1                                      &mo 3   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp T   &kp Q   &kp W   &kp E   &kp R   &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp G   &kp A   &kp S   &kp D   &kp F   &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp B   &kp Z   &kp X   &kp C   &kp V                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Symbol {
+            display-name = "Cyan";
+            bindings = <
+&trans           &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA     &none                                                                   &none                  &trans         &trans          &trans            &trans        &trans        &trans
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION  &kp LEFT_BRACKET                                                        &kp RIGHT_BRACKET      &kp SEMICOLON  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_WIN  &trans
+&kp POUND        &kp CARET       &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp PERIOD         &trans  &trans  &kp RIGHT_PARENTHESIS  &kp PERIOD     &kp BACKSPACE   &kp TAB           &kp SPACE     &kp ENTER     &trans
+&kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH                                          &kp ASTERISK       &trans                                 &kp SLASH      &kp DELETE      &trans            &trans        &trans        &trans
+&kp AT_SIGN      &kp AMPERSAND   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS                        &kp PERCENT           &kp COLON      &kp SEMICOLON      &trans  &trans  &trans                                &trans          &trans            &trans        &trans        &trans
             >;
         };
 
