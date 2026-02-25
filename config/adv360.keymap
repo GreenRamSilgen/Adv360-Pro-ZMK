@@ -137,11 +137,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none                                                &mo 3   &kp F7  &kp F8        &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans        &trans        &trans        &trans        &trans        &none                                                &none   &trans  &extronEmail  &trans  &trans   &trans   &trans
-&trans  &kp A         &kp S         &kp D         &kp F         &trans        &none   &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &none   &trans  &trans        &trans  &trans   &trans   &trans
-&trans  &trans        &trans        &trans        &trans        &trans                           &kp P             &trans                  &trans  &trans        &trans  &trans   &trans   &trans
-&trans  &trans        &trans        &trans        &trans                      &trans  &kp SPACE  &trans            &trans  &trans  &trans          &trans        &trans  &trans   &trans   &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none                                                       &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans        &trans        &trans        &trans        &trans        &none                                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &kp A         &kp S         &kp D         &kp F         &trans        &none      &kp LCTRL      &kp LEFT_ALT      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans        &trans        &trans        &trans        &trans                                  &kp P             &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans        &trans        &trans        &trans                      &kp SPACE  &kp BACKSPACE  &trans            &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -174,7 +174,7 @@
 &trans  &kp T   &kp Q   &kp W   &kp E   &kp R   &none                                                    &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp G   &kp A   &kp S   &kp D   &kp F   &none      &kp LEFT_CONTROL  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp B   &kp Z   &kp X   &kp C   &kp V                                &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp SPACE         &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp LEFT_ALT      &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
