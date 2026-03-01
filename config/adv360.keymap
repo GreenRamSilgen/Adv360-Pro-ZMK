@@ -119,7 +119,7 @@
 &kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
 &kp ESC    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &kp ESCAPE  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &none      &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                        &kp LGUI              &kp PAGE_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&tog 2     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp DEL  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 5
+&tog 5     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp DEL  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 2
             >;
         };
 
