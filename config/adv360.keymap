@@ -189,14 +189,14 @@
             >;
         };
 
-        ColemakDH {
+        SvalboardCustom {
             display-name = "Yellow";
             bindings = <
-&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &trans
-&kp TAB    &kp Q                  &kp W             &kp F                &kp P                &kp B   &none                                                                    &none      &kp J   &kp L   &kp I      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL R  &leftHRM LEFT_GUI S  &leftHRM LEFT_ALT T  &kp G   &kp ESCAPE  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &none      &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z                  &kp X             &kp C                &kp D                &kp V                        &kp LGUI              &kp PAGE_UP                              &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&trans     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp DEL  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &trans
+&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                   &mo 3      &kp N6      &kp N7         &kp N8     &kp N9     &kp N0    &trans
+&kp TAB    &kp Q                  &kp V             &kp F                &kp B                &kp Z   &none                                                                    &none      &kp X       &kp SEMICOLON  &kp COMMA  &kp SLASH  &kp W     &kp BSLH
+&kp ESC    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL T  &leftHRM LEFT_GUI S  &leftHRM LEFT_ALT N  &kp P   &kp ESCAPE  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &none      &kp K       &kp R          &kp E      &kp I      &kp D     &kp SQT
+&kp LSHFT  &kp Y                  &kp G             &kp H                &kp C                &kp J                        &kp LGUI              &kp PAGE_UP                              &kp PERIOD  &kp L          &kp O      &kp U      &kp M     &kp RSHFT
+&trans     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp DEL  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE              &kp UP         &kp DOWN   &kp LBKT   &kp RBKT  &trans
             >;
         };
 
