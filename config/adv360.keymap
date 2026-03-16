@@ -205,7 +205,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none                                                   &mo 3   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F11
 &trans  &trans        &trans        &trans        &trans        &trans        &none                                                   &none   &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &kp A         &kp S         &kp D         &kp F         &trans        &none      &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &none   &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &kp A         &kp S         &kp D         &kp F         &trans        &none      &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &tog 8  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans        &trans        &trans        &trans        &trans                              &kp P             &trans                  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans        &trans        &trans        &trans                      &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
             >;
