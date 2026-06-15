@@ -76,7 +76,7 @@
                 <&macro_wait_time 75>,
                 <&kt LSHIFT>,
                 <&macro_wait_time 75>,
-                <&kp A &kp F &kp U &kp U &kp N2 &kp N0 &kp N1 &kp NUMBER_7 &kp EXCL>;
+                <&kp A &kp F &kp U &kp U &kp N2 &kp N0 &kp N1 &kp NUMBER_8 &kp EXCL>;
 
             label = "EXTRONPASS";
             wait-ms = <35>;
