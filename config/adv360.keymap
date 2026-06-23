@@ -177,11 +177,11 @@
         WASD {
             display-name = "Purple";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &tog 1                                                   &mo 3   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp T   &kp Q   &kp W   &kp E   &kp R   &none                                                    &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp G   &kp A   &kp S   &kp D   &kp F   &none      &kp LEFT_CONTROL  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp B   &kp Z   &kp X   &kp C   &kp V                                &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp LEFT_ALT      &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &tog 1                                                   &mo 3   &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp T   &kp Q   &kp W   &kp E   &kp R   &none                                                    &none   &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp G   &kp A   &kp S   &kp D   &kp F   &none      &kp LEFT_CONTROL  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp B   &kp Z   &kp X   &kp C   &kp V                                &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans          &kp SPACE  &kp LEFT_ALT      &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
