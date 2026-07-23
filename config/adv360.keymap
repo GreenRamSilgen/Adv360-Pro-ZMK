@@ -144,11 +144,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                                   &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                                   &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                                   &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                                   &none   &trans  &trans  &trans  &trans  &kp F11  &trans
 &trans  &kp A   &kp S   &kp D   &kp F   &trans  &none      &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                        &kp P             &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&none   &trans  &trans  &trans  &trans          &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -210,11 +210,11 @@
         NoHomeRow {
             display-name = "Cyan";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none                                                   &mo 3   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F11
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none                                                   &mo 3   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
 &trans  &trans        &trans        &trans        &trans        &trans        &none                                                   &none   &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &kp A         &kp S         &kp D         &kp F         &trans        &none      &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &tog 8  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans        &trans        &trans        &trans        &trans                              &kp P             &trans                  &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &trans                      &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
+&none   &trans        &trans        &trans        &trans                      &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans                &trans        &trans        &trans        &trans        &none
             >;
         };
 
@@ -222,12 +222,12 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
 &trans  &kp B   &kp L   &kp D   &kp C   &kp V   &trans                                      &trans  &kp J   &kp Y   &kp O     &kp U     &kp COMMA  &trans
-&trans  &kp N   &kp R   &kp T   &kp S   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp P   &kp H   &kp A     &kp E     &kp I      &trans
+&trans  &kp N   &kp R   &kp T   &kp S   &kp G   &trans  &trans  &trans      &trans  &trans  &none   &kp P   &kp H   &kp A     &kp E     &kp I      &trans
 &trans  &kp X   &kp Q   &kp M   &kp W   &kp Z                   &trans      &trans                  &kp K   &kp F   &kp APOS  &kp SEMI  &kp DOT    &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &trans
+&none   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &none
             >;
 
-            label = "Pink";
+            label = "Yellow";
         };
     };
 };
