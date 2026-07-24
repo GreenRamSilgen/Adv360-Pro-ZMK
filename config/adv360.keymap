@@ -114,6 +114,34 @@
             bindings = <&kp A &kp D &kp M &kp I &kp N &kp TAB &kp E &kp X &kp T &kp R &kp O &kp N>;
             label = "ADMINEXTRON";
         };
+
+        ctrlLeftArrow: ctrlLeftArrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRLLEFTARROW";
+        };
+
+        ctrlRightArrow: ctrlRightArrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRLRIGHTARROW";
+        };
     };
 
     keymap {
@@ -166,11 +194,11 @@
         ArrowNumMac {
             display-name = "Red";
             bindings = <
-&trans  &kp F1    &kp F2      &kp F3             &kp F4           &kp F5   &tog 1                                                    &mo 3            &kp F7  &kp POUND        &kp DOLLAR       &kp CARET        &kp F11    &kp F12
-&trans  &kp HOME  &trans      &kp UP             &trans           &kp END  &none                                                     &kp KP_NUMLOCK   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp TILDE  &extronEmail
-&trans  &trans    &kp LEFT    &kp DOWN           &kp RIGHT        &trans   &none   &trans  &trans      &kp EQUAL         &kp COMMA   &adminExtron     &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &extronPass
-&trans  &trans    &trans      &trans             &trans           &trans                   &trans      &kp LESS_THAN                                  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &extAltPass
-&trans  &trans    &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &trans  &trans  &trans      &kp GREATER_THAN  &kp PERIOD  &kp KP_NUMBER_0          &trans           &trans           &trans           &trans     &trans
+&trans  &kp F1    &kp F2          &kp F3             &kp F4           &kp F5   &tog 1                                                    &mo 3            &kp F7  &kp POUND        &kp DOLLAR       &kp CARET        &kp F11    &kp F12
+&trans  &kp HOME  &ctrlLeftArrow  &kp UP             &ctrlRightArrow  &kp END  &none                                                     &kp KP_NUMLOCK   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp TILDE  &extronEmail
+&trans  &trans    &kp LEFT        &kp DOWN           &kp RIGHT        &trans   &none   &trans  &trans      &kp EQUAL         &kp COMMA   &adminExtron     &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &extronPass
+&trans  &trans    &trans          &trans             &trans           &trans                   &trans      &kp LESS_THAN                                  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &extAltPass
+&trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &trans  &trans  &trans      &kp GREATER_THAN  &kp PERIOD  &kp KP_NUMBER_0          &trans           &trans           &trans           &trans     &trans
             >;
         };
 
