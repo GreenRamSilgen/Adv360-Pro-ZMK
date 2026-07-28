@@ -142,6 +142,20 @@
 
             label = "CTRLRIGHTARROW";
         };
+
+        ctrlBackspace: ctrlBackspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRLBACKSPACE";
+        };
     };
 
     keymap {
@@ -150,11 +164,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &tog 9
-&kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
-&kp DEL    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &kp ESCAPE  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                        &kp LGUI              &kp PAGE_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&tog 5     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC    &kp ESC  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 2
+&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &tog 9
+&kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
+&kp DEL    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &ctrlBackspace  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                            &kp LGUI              &kp PAGE_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&tog 5     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &kp BSPC        &kp ESC  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 2
             >;
         };
 
