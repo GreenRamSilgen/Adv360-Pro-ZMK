@@ -226,11 +226,11 @@
         WASD {
             display-name = "Purple";
             bindings = <
-&kp M  &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &tog 1                                                     &mo 3   &trans  &trans  &trans  &trans  &trans  &none
-&kp I  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &none                                                      &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
-&kp T  &kp TAB    &kp Q   &kp W   &kp E   &kp R   &none      &kp V         &kp ESC        &trans     &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
-&kp G  &kp LSHFT  &kp A   &kp S   &kp D   &kp F                            &kp BSPC       &kp LCTRL                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp B  &kp LCTRL  &kp Z   &kp X   &kp C           &kp SPACE  &kp LEFT_ALT  &kp ENTER      &trans     &trans  &trans          &trans  &trans  &trans  &trans  &none
+&kp NUMBER_0  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                                                      &mo 3   &trans  &trans  &trans  &trans  &trans  &none
+&kp I         &kp TAB           &kp Q         &kp W         &kp E         &kp R   &kp T                                                      &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB       &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F   &kp G      &kp ESCAPE    &kp ESC        &trans     &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&kp G         &kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V                            &kp BSPC       &kp LCTRL                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp B         &kp LCTRL         &kp B         &kp I         &kp M                 &kp SPACE  &kp LEFT_ALT  &kp ENTER      &trans     &trans  &trans          &trans  &trans  &trans  &trans  &none
             >;
         };
 
