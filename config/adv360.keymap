@@ -163,6 +163,34 @@
 
             label = "CTRLBACKSPACE";
         };
+
+        certifiedExtron: certifiedExtron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp X &kp T &kp R &kp O &kp N &kp T &kp E &kp S &kp T &kp N2 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "CERTIFIEDEXTRON";
+        };
+
+        certifiedExtronPass: certifiedExtronPass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8 &kp Y &kp TILDE &kp N2 &kp D &kp N3 &kp E &kp LS(B) &kp LS(G) &kp LS(L) &kp R &kp J &kp LS(H) &kp LS(N) &kp P &kp UNDER>;
+            label = "CERTIFIEDEXTRONPASS";
+        };
+
+        uncertExtron: uncertExtron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp X &kp T &kp R &kp O &kp N &kp T &kp E &kp S &kp T &kp N1 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "UNCERTEXTRON";
+        };
+
+        uncertExtronPass: uncertExtronPass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp CARET &kp N3 &kp R &kp LS(L) &kp LS(T) &kp LS(G) &kp V &kp LS(K) &kp LS(L) &kp LS(L) &kp LS(Y) &kp LS(T) &kp N2 &kp LS(Z) &kp LS(U)>;
+            label = "UNCERTEXTRONPASS";
+        };
     };
 
     keymap {
@@ -215,11 +243,11 @@
         ArrowNumMac {
             display-name = "Red";
             bindings = <
-&trans  &kp F1    &kp F2          &kp F3             &kp F4           &kp F5   &tog 1                                                    &mo 3            &kp F7  &kp POUND        &kp DOLLAR       &kp CARET        &kp F11    &kp F12
-&trans  &kp HOME  &ctrlLeftArrow  &kp UP             &ctrlRightArrow  &kp END  &none                                                     &kp KP_NUMLOCK   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp TILDE  &extronEmail
-&trans  &trans    &kp LEFT        &kp DOWN           &kp RIGHT        &trans   &none   &trans  &trans      &kp EQUAL         &kp COMMA   &adminExtron     &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &extronPass
-&trans  &trans    &trans          &trans             &trans           &trans                   &trans      &kp LESS_THAN                                  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &extAltPass
-&trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &trans  &trans  &trans      &kp GREATER_THAN  &kp PERIOD  &kp KP_NUMBER_0          &trans           &trans           &trans           &trans     &trans
+&trans  &kp F1    &kp F2          &kp F3             &kp F4           &kp F5   &tog 1                                                    &mo 3            &kp F7  &kp POUND        &kp DOLLAR       &kp CARET        &kp F11               &kp F12
+&trans  &kp HOME  &ctrlLeftArrow  &kp UP             &ctrlRightArrow  &kp END  &none                                                     &kp KP_NUMLOCK   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp TILDE             &extronEmail
+&trans  &trans    &kp LEFT        &kp DOWN           &kp RIGHT        &trans   &none   &trans  &trans      &kp EQUAL         &kp COMMA   &adminExtron     &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &certifiedExtron      &extronPass
+&trans  &trans    &trans          &trans             &trans           &trans                   &trans      &kp LESS_THAN                                  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &certifiedExtronPass  &extAltPass
+&trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &trans  &trans  &trans      &kp GREATER_THAN  &kp PERIOD  &kp KP_NUMBER_0          &trans           &trans           &trans           &uncertExtron         &uncertExtronPass
             >;
         };
 
