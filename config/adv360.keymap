@@ -256,9 +256,9 @@
             bindings = <
 &kp NUMBER_0  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none                                                      &mo 3   &trans  &trans  &trans  &trans  &trans  &none
 &kp I         &kp TAB           &kp Q         &kp W         &kp E         &kp R   &kp T                                                      &tog 5  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB       &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F   &kp G      &kp ESCAPE    &kp ESC        &trans     &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&kp DELETE    &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F   &kp G      &kp ESCAPE    &kp ESC        &trans     &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &kp G         &kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V                            &kp BSPC       &kp LCTRL                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp B         &kp LCTRL         &kp B         &kp I         &kp M                 &kp SPACE  &kp LEFT_ALT  &kp ENTER      &trans     &trans  &trans          &trans  &trans  &trans  &trans  &none
+&kp H         &kp LCTRL         &kp M         &kp I         &kp B                 &kp SPACE  &kp LEFT_ALT  &kp ENTER      &trans     &trans  &trans          &trans  &trans  &trans  &trans  &none
             >;
         };
 
