@@ -199,11 +199,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &tog 9
+&kp EQUAL  &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
 &kp TAB    &kp Q                  &kp W             &kp E                &kp R                &kp T   &none                                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
-&kp DEL    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &ctrlBackspace  &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp DEL    &leftHRM LEFT_SHIFT A  &leftHRM LCTRL S  &leftHRM LEFT_GUI D  &leftHRM LEFT_ALT F  &kp G   &tog 2          &mo 4    &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &mo 6      &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z                  &kp X             &kp C                &kp V                &kp B                            &kp LGUI              &kp PAGE_UP                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&tog 5     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &td_dbl_bkspce  &kp ESC  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 2
+&tog 5     &kp GRAVE              &kp CAPS          &kp LEFT             &kp RIGHT                    &td_dbl_bkspce  &kp ESC  &kp LEFT_ALT          &kp PAGE_DOWN      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 9
             >;
         };
 
@@ -221,11 +221,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                                   &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                                   &mo 3   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                                   &none   &trans  &trans  &trans  &trans  &kp F11  &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &trans  &none      &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &trans  &tog 2     &kp LCTRL  &kp LEFT_ALT      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                        &kp P             &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-&none   &trans  &trans  &trans  &trans          &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+&none   &trans  &trans  &trans  &trans          &kp SPACE  &kp LCTRL  &trans            &trans  &trans  &trans          &trans  &trans  &trans  &trans   &none
             >;
         };
 
@@ -268,8 +268,8 @@
 &trans           &kp GRAVE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON      &kp COMMA     &none                                                                  &none                  &trans      &trans             &trans          &trans        &trans                &trans
 &kp EXCLAMATION  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp QUESTION  &kp LEFT_BRACKET                                                       &kp RIGHT_BRACKET      &kp PERIOD  &kp DELETE         &kp LEFT_SHIFT  &kp INSERT    &kp ESCAPE            &trans
 &kp POUND        &kp CARET         &kp EQUAL             &kp UNDERSCORE         &kp DOLLAR         &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp BACKSLASH  &kp PERIOD        &trans  &trans  &kp RIGHT_PARENTHESIS  &kp COMMA   &kp BACKSPACE      &kp TAB         &kp SPACE     &kp ENTER             &trans
-&kp TILDE        &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                          &kp ASTERISK      &trans                                 &kp SEMI    &kp DOUBLE_QUOTES  &kp SQT         &kp GRAVE     &kp NON_US_BACKSLASH  &trans
-&kp AT_SIGN      &kp AMPERSAND     &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp PLUS                         &kp PERCENT           &kp COLON      &kp AT_SIGN       &trans  &trans  &trans                             &kp LEFT_SHIFT     &kp LCTRL       &kp LEFT_ALT  &kp LEFT_WIN          &trans
+&kp TILDE        &kp LESS_THAN     &kp MINUS             &kp PLUS               &kp GREATER_THAN   &kp SLASH                                          &kp ASTERISK      &trans                                 &kp SEMI    &kp DOUBLE_QUOTES  &kp SQT         &kp GRAVE     &kp NON_US_BACKSLASH  &trans
+&kp AT_SIGN      &kp PIPE          &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp AMPERSAND                    &kp PERCENT           &kp COLON      &kp AT_SIGN       &trans  &trans  &trans                             &kp LEFT_SHIFT     &kp LCTRL       &kp LEFT_ALT  &kp LEFT_WIN          &trans
             >;
         };
 
@@ -299,9 +299,9 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans    &trans    &trans     &trans
 &trans  &kp B   &kp L   &kp D   &kp C   &kp V   &trans                                      &trans  &kp J   &kp Y   &kp O     &kp U     &kp COMMA  &trans
-&trans  &kp N   &kp R   &kp T   &kp S   &kp G   &trans  &trans  &trans      &trans  &trans  &none   &kp P   &kp H   &kp A     &kp E     &kp I      &trans
+&trans  &kp N   &kp R   &kp T   &kp S   &kp G   &none   &trans  &trans      &trans  &trans  &none   &kp P   &kp H   &kp A     &kp E     &kp I      &trans
 &trans  &kp X   &kp Q   &kp M   &kp W   &kp Z                   &trans      &trans                  &kp K   &kp F   &kp APOS  &kp SEMI  &kp DOT    &trans
-&none   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &none
+&none   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans    &trans     &tog 9
             >;
 
             label = "Yellow";
